@@ -10,4 +10,24 @@ const reverseString = (string) => {
   return string.split('').reverse().join('');
 };
 
-module.exports = { stringLength, reverseString };
+class Calculator {
+
+  static add = (x, y) => {
+    return x + y;
+  }
+
+  static subtract = (x, y) => {
+    return x - y;
+  }
+
+  static multiply = (x, y) => {
+    return x * y;
+  }
+
+  static divide = (x, y) => {
+    if (x > 0 && y > 0) return x / y;
+    throw new Error('Numbers must be greater than 0');
+  }
+}
+
+module.exports = { stringLength, reverseString, Calculator };
