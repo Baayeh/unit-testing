@@ -1,0 +1,24 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baayeh/unit-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baayeh/unit-testing/issues"
+  },
+  "homepage": "https://github.com/Baayeh/unit-testing#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
