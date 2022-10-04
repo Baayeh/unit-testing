@@ -1,4 +1,4 @@
-const {stringLength, reverseString, Calculator} = require('./index');
+const {stringLength, reverseString, Calculator,capitalize} = require('./index');
 
 // Test for the stringLength function
 describe('String Length', () => {
@@ -32,6 +32,7 @@ describe('Reverse String', () => {
 
 // Tests for each method of the Calculator Class
 describe('Calculator Class', () => {
+  // Test for Add function
   describe('Add Function', () => {
     test('1 + 2 = 3', () => {
       expect(Calculator.add(1, 2)).toBe(3);
@@ -45,6 +46,8 @@ describe('Calculator Class', () => {
       expect(Calculator.add(11, 21)).toBe(32);
     });
   });
+
+  // Test for Subtract function
   describe('Subtract Function', () => {
     test('1 - 2 = -1', () => {
       expect(Calculator.subtract(1, 2)).toBe(-1);
@@ -58,6 +61,8 @@ describe('Calculator Class', () => {
       expect(Calculator.subtract(50, 22)).toBe(28);
     });
   });
+
+  // Test for Multiply function
   describe('Multiply Function', () => {
     test('1 * 2 = 2', () => {
       expect(Calculator.multiply(1, 2)).toBe(2);
@@ -71,6 +76,8 @@ describe('Calculator Class', () => {
       expect(Calculator.multiply(0, 3)).toBe(0);
     });
   });
+
+  // Test for Divide function
   describe('Divide Function', () => {
     test('1 / 2 = 0.5', () => {
       expect(Calculator.divide(1, 2)).toBe(0.5);
@@ -83,5 +90,12 @@ describe('Calculator Class', () => {
     test('21 / 7 = 3', () => {
       expect(Calculator.divide(21, 7)).toBe(3);
     });
+  });
+});
+
+// Test for the Capitalize function
+describe('Capitalize String', () => {
+  test('javaScript should be Javascript', () => {
+    expect(capitalize('javaScript')).toBe('Javascript');
   });
 });
